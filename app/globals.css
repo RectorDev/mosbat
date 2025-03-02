@@ -5,10 +5,12 @@
   --font-space: var(--font-space);
   --color-primary: hsl(var(--primary));
   --color-secondary: hsl(var(--secondary));
+  --color-accent: hsl(var(--accent));
 }
 :root {
   --primary: 0 0% 95%;
   --secondary: 234 17% 12%;
+  --accent: 87 100% 70%;
 }
 
 @layer utilities {
@@ -27,7 +29,37 @@
   .para {
     @apply lg:text-lg text-[1rem] font-normal;
   }
- 
+  .green {
+    @apply text-accent;
+  }
+  .green-white {
+    @apply text-accent bg-white;
+  }
+  .green-dark {
+    @apply text-accent bg-black;
+  }
+  .dark-white {
+    @apply text-black bg-white;
+  }
+  .white-dark {
+    @apply text-white bg-black;
+  }
+  .dark-green {
+    @apply text-black bg-accent;
+  }
+  .white-green {
+    @apply text-white bg-accent;
+  }
+  .dark-tran {
+    @apply text-black bg-transparent;
+  }
+  .white-tran {
+    @apply text-white bg-transparent;
+  }
+
+  .green {
+    @apply text-accent bg-transparent;
+  }
   .padding-sm {
     @apply px-2 sm:px-4 xl:px-6 2xl:px-8 py-2 sm:py-3 xl:py-4 2xl:py-5;
   }
@@ -377,9 +409,7 @@
   }
   .container-padding {
     @apply 2xl:px-[100px] xl:px-24 lg:px-16 sm:px-9 px-4;
-   
   }
-  
 }
 
 .max-container {
