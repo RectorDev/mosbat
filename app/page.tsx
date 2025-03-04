@@ -1,9 +1,9 @@
-import LinkTap from "@/components/LinkTap";
+import Hero from "./sections/Hero";
 
 export default function Home() {
   return (
     <div className="">
-      <LinkTap labelVariant="green" arrowVariant="green-tran" tran/>
+      <Hero />
     </div>
   );
 }

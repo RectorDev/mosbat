@@ -14,23 +14,30 @@
 }
 
 @layer utilities {
-  .h-I {
+  .head-1 {
     @apply lg:text-6xl text-[2.69rem] font-medium;
   }
-  .h-II {
+  .head-2 {
     @apply lg:text-[2.69rem] text-4xl font-medium;
   }
-  .h-III {
+  .head-3 {
     @apply lg:text-[1.63rem] text-[2.69rem] font-medium;
   }
-  .h-IIII {
+  .head-4 {
     @apply lg:text-xl text-lg font-medium;
   }
   .para {
     @apply lg:text-lg text-[1rem] font-normal;
   }
-  .green {
-    @apply text-accent;
+
+  .l-green {
+    @apply text-accent bg-transparent;
+  }
+  .l-dark {
+    @apply text-black;
+  }
+  .l-white {
+    @apply text-white;
   }
   .green-white {
     @apply text-accent bg-white;
@@ -56,9 +63,47 @@
   .white-tran {
     @apply text-white bg-transparent;
   }
+  .btn-dark {
+    @apply text-primary bg-secondary;
+  }
+  .btn-green {
+    @apply text-secondary bg-accent;
+  }
+  .btn-outline {
+    @apply text-secondary bg-transparent border-2 border-secondary;
+  }
 
-  .green {
-    @apply text-accent bg-transparent;
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes scroll-reverse {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50%); }
+  }
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  .animate-scroll-reverse {
+    animation: scroll-reverse 30s linear infinite;
+  }
+
+  .green-heading {
+    @apply text-black bg-accent;
+  }
+  .light-heading {
+    @apply text-black bg-white;
+  }
+  .dark-heading {
+    @apply text-white bg-secondary;
   }
   .padding-sm {
     @apply px-2 sm:px-4 xl:px-6 2xl:px-8 py-2 sm:py-3 xl:py-4 2xl:py-5;

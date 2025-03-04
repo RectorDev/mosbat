@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 const space = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" });
 export const metadata: Metadata = {
   title: "Positive | مثبت",
@@ -14,8 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased ${space.variable}`}>
-        <div className="min-h-screen font-space container-padding max-container">{children}</div>
+      <body className={`antialiased font-space ${space.variable}`}>
+       
+          <Navbar />
+        <div className="font-space max-container">{children}</div>
       </body>
     </html>
   );
