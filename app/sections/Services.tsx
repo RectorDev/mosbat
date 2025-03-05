@@ -15,7 +15,7 @@ export default function Services() {
       {/* cards */}
       <div className="flex flex-wrap gap-10 justify-center items-center margin-y-2xl">
         {SERVICES_SECTION.services.map((card) => (
-          <ServiceCard key={card.title} theme={card.theme} title={card.title} title2={card.title2} image={card.img} label="learn more" />
+          <ServiceCard key={card.title} theme={card.theme as "green" | "dark" | "light"} title={card.title} title2={card.title2} image={card.img} label="learn more" />
         ))}
       </div>
       {/* foot */}
@@ -25,7 +25,10 @@ export default function Services() {
           <p className="para mt-8">{SERVICES_SECTION.foot.description}</p>
           <Button variant="btn-dark" classes="w-fit my-8 max-lg:w-full justify-center" label={SERVICES_SECTION.foot.button} />
         </div>
-        <div className="flex flex-1 items-center justify-center relative max-lg:hidden"> <Image className="absolute " src={'/service-foot.png'} width={359} height={359} alt="illustration"/></div>
+        <div className="flex flex-1 items-center justify-center relative max-lg:hidden">
+          {" "}
+          <Image className="absolute " src={"/service-foot.png"} width={359} height={359} alt="illustration" />
+        </div>
       </div>
     </section>
   );
