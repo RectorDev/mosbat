@@ -6,7 +6,7 @@ import { Menu } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <nav className="container-padding flex justify-between sticky top-0  h-[90px] items-center w-full   mt-6  backdrop-blur-md z-40">
+    <nav className="container-padding max-container flex justify-between sticky top-0  h-[90px] items-center w-full   mt-6  backdrop-blur-md z-40">
       {/* left side */}
       <div className="flex">
         <Link href={"/"}>
