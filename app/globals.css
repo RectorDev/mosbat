@@ -21,7 +21,7 @@
     @apply lg:text-[2.69rem] text-4xl font-medium;
   }
   .head-3 {
-    @apply lg:text-[1.63rem] text-[2.69rem] font-medium;
+    @apply lg:text-3xl text-[1.65rem] font-medium;
   }
   .head-4 {
     @apply lg:text-xl text-lg font-medium;
