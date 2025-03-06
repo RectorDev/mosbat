@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HERO_SECTION } from "@/app/constants";
+import { HERO_SECTION } from "@/app/sections/constants";
 import Button from "@/components/Button";
 import SliderCompa from "./SliderCompa";
 

@@ -2,6 +2,7 @@ import CaseStudies from "./sections/CaseStudies/CaseStudies";
 import Hero from "./sections/Hero/Hero";
 import OurWorkingProcess from "./sections/OurWorkingProcess/OurWorkingProcess";
 import Services from "./sections/Services/Services";
+import Team from "./sections/Team/Team";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Services/>
       <CaseStudies/>
       <OurWorkingProcess/>
+      <Team/>
     </div>
   );
 }

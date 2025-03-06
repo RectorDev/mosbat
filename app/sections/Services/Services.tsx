@@ -1,5 +1,5 @@
 import Heading from "@/components/Heading";
-import { SERVICES_SECTION } from "../../constants";
+import { SERVICES_SECTION } from "@/app/sections/constants";
 import ServiceCard from "./ServiceCard";
 import Button from "@/components/Button";
 import Image from "next/image";

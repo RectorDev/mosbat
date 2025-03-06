@@ -1,6 +1,6 @@
 import SectionHead from "@/components/SectionHead";
 import React from "react";
-import { CASE_STUDIES_SECTION } from "../../constants";
+import { CASE_STUDIES_SECTION } from "@/app/sections/constants";
 import Case from "./Case";
 
 export default function CaseStudies() {

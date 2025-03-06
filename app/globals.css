@@ -82,12 +82,20 @@
     }
   }
   @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
   @keyframes scroll-reverse {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(50%); }
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50%);
+    }
   }
   .animate-scroll {
     animation: scroll 30s linear infinite;
@@ -457,6 +465,11 @@
   }
 }
 
+.pfp-mask {
+  mask-repeat: no-repeat;
+  mask-image: url("../public/Vector.svg");
+  mask-size: contain;
+}
 .max-container {
   max-width: 1440px;
   margin: 0 auto;
