@@ -22,7 +22,11 @@ export default function ServiceCard({ title, title2, label, image, theme }: Prop
           <Heading label={title2} variant={theme === "green" ? "dark-heading" : theme === "dark" ? "light-heading" : "green-heading"} />
         </div>
         <div className="hidden sm:flex">
-          <LinkTap arrowVariant={theme === "green" ? "green-dark" : theme === "dark" ? "dark-white" : "green-dark"} label="learn more" />
+          <LinkTap
+            arrowVariant={theme === "green" ? "green-dark" : theme === "dark" ? "dark-white" : "green-dark"}
+            label="learn more"
+            labelClass={theme === "green" ? "text-black !bg-transparent" : theme === "dark" ? "text-white" : "text-black"}
+          />
         </div>
       </div>
       <div className="flex  items-end justify-between">

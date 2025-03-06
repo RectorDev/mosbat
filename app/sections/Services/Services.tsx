@@ -1,17 +1,15 @@
 import Heading from "@/components/Heading";
-import { SERVICES_SECTION } from "../constants";
+import { SERVICES_SECTION } from "../../constants";
 import ServiceCard from "./ServiceCard";
 import Button from "@/components/Button";
 import Image from "next/image";
+import SectionHead from "@/components/SectionHead";
 
 export default function Services() {
   return (
     <section className="container-padding  margin-t-2xl">
       {/* heading */}
-      <div className="flex items-center justify-center flex-col lg:flex-row lg:w-2/3 ">
-        <Heading label={SERVICES_SECTION.title} />
-        <p className="para inline lg:ml-7 max-lg:mt-8 max-lg:text-center ">{SERVICES_SECTION.description}</p>
-      </div>
+      <SectionHead head={SERVICES_SECTION.title} description={SERVICES_SECTION.description}/>
       {/* cards */}
       <div className="flex flex-wrap gap-10 justify-center items-center margin-y-2xl">
         {SERVICES_SECTION.services.map((card) => (
@@ -26,7 +24,6 @@ export default function Services() {
           <Button variant="btn-dark" classes="w-fit my-8 max-lg:w-full justify-center" label={SERVICES_SECTION.foot.button} />
         </div>
         <div className="flex flex-1 items-center justify-center relative max-lg:hidden">
-          {" "}
           <Image className="absolute " src={"/service-foot.png"} width={359} height={359} alt="illustration" />
         </div>
       </div>
