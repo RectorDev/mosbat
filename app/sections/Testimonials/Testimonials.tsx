@@ -30,7 +30,7 @@ export default function Testimonials() {
           slideToClickedSlide
         >
           {TESTIMONIALS_SECTION.testimonials.map((tes, index) => (
-            <SwiperSlide className="swiper-slide" key={index}>
+            <SwiperSlide  key={index}>
               <TestimonialCard author={tes.author} quote={tes.quote} role={tes.role} />
             </SwiperSlide>
           ))}
