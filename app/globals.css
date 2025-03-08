@@ -464,7 +464,6 @@
     @apply 2xl:px-[100px] xl:px-24 lg:px-16 sm:px-9 px-4;
   }
 }
-.swiper-slide{width: 450px;}
 
 .pfp-mask {
   mask-repeat: no-repeat;
