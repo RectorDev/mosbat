@@ -1,4 +1,5 @@
 import CaseStudies from "./sections/CaseStudies/CaseStudies";
+import ContactUs from "./sections/Contact-Us/ContactUs";
 import Hero from "./sections/Hero/Hero";
 import OurWorkingProcess from "./sections/OurWorkingProcess/OurWorkingProcess";
 import Services from "./sections/Services/Services";
@@ -14,6 +15,7 @@ export default function Home() {
       <OurWorkingProcess />
       <Team />
       <Testimonials />
+      <ContactUs/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 export default function Team() {
   return (
     <section className="container-padding margin-y-2xl ">
-      <div className=" margin-y-xl ">
+      <div className=" margin-y-2xl ">
         <SectionHead description={TEAM_SECTION.description} head={TEAM_SECTION.title} />
       </div>
       <ul className="flex flex-wrap gap-10 items-center justify-center">

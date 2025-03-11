@@ -470,6 +470,7 @@
   mask-image: url("../public/Vector.svg");
   mask-size: contain;
 }
+
 .max-container {
   max-width: 1440px;
   margin: 0 auto;
