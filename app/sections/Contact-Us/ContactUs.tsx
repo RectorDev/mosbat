@@ -40,7 +40,7 @@ export default function ContactUs() {
           </div>
           <Button variant="btn-dark" classes="justify-center w-full " label="Send Message"/>
         </form>
-        <div className="absolute max-lg:hidden top-0 -right-1/4"><Image src={'/illustration.png'} width={691} height={648} alt="illustration" /></div>
+        <div className="absolute max-lg:hidden top-0 -right-1/4"><Image src={'/logo/Illustration.png'} width={691} height={648} alt="illustration" /></div>
       </div>
     </section>
   );
