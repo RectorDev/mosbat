@@ -2,12 +2,12 @@ import { NAV_LINKS } from "@/app/constants";
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import Heading from "./Heading";
 import { Input } from "./ui/input";
 import Button from "./Button";
 
 export default function Footer() {
+  
   return (
     <section className="max-container 2xl:px-[100px]">
       <div className="px-5 py-10 xl:px-[60px] xl:py-[55px] xl:rounded-t-4xl bg-secondary text-white para">
