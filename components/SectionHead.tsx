@@ -1,6 +1,6 @@
 import Heading from "./Heading";
 
-export default function SectionHead({ head, description }: { head: string; description: string }) {
+export default function SectionHead({ head, description }: { head?: string; description: string }) {
   return (
     <div className="flex items-center justify-center flex-col lg:flex-row lg:w-2/3 ">
       <Heading label={head} />
