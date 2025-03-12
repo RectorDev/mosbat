@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="px-5 py-10 xl:px-[60px] xl:py-[55px] xl:rounded-t-4xl bg-secondary text-white para">
         <div className="flex flex-col lg:flex-row max-lg:gap-10 justify-center lg:justify-between">
           <div className="flex justify-center items-center">
-            <Image src={"/public/logo.png"} width={180} height={29} alt="logo" />
+            <Image src={"/logo.png"} width={180} height={29} alt="logo" />
           </div>
           <div className="flex flex-col lg:flex-row  items-center gap-2 lg:gap-10">
             {NAV_LINKS.map((item) => (
