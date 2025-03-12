@@ -12,7 +12,7 @@ export default function ExpandableBar({ step, title, description }: { descriptio
           <p className="text-4xl lg:text-6xl">{step}</p>
           <p className="text-xl lg:text-[1.9rem]">{title}</p>
         </div>
-        <Expand action={()=>setExpanded(!expanded)} expand={false} />
+        <Expand action={()=>setExpanded(!expanded)} expand={!expanded} />
       </div>
       {/* detail */}
       {expanded && (

@@ -27,7 +27,7 @@ export default function Testimonials() {
             el: ".swiper-pagination",
             clickable: true,
             renderBullet(index, className) {
-              return `<span class="${className}"><img src="/vector.svg" alt="bullet" /></span>`;
+              return `<span class="${className}"><Image src="/vector.svg" alt="bullet" /></span>`;
             },
           }}
           navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }}
